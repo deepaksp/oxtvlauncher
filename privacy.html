@@ -4,46 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Privacy Policy</title>
-    <meta name="description" content="Privacy Policy for our app. Learn how we handle your data, media, and purchases.">
+    <title>Privacy Policy - OX TV Launcher</title>
+
+    <meta
+        name="description"
+        content="Privacy Policy for OX TV Launcher."
+    >
 
     <style>
         :root {
-            --bg: #f6f7f9;
-            --surface: #ffffff;
-            --text: #17191c;
-            --muted: #686d75;
-            --border: #e5e7eb;
-            --accent: #4f46e5;
-            --accent-soft: #eef2ff;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #0c0d0f;
-                --surface: #15171a;
-                --text: #f5f5f5;
-                --muted: #9da3ad;
-                --border: #282c32;
-                --accent: #818cf8;
-                --accent-soft: #1c1d35;
-            }
+            color-scheme: light dark;
         }
 
         * {
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             margin: 0;
-            background: var(--bg);
-            color: var(--text);
             font-family:
-                Inter,
                 -apple-system,
                 BlinkMacSystemFont,
                 "Segoe UI",
@@ -52,142 +31,75 @@
                 Arial,
                 sans-serif;
             line-height: 1.7;
+            background: #fff;
+            color: #222;
         }
 
-        .container {
-            width: min(820px, calc(100% - 40px));
+        main {
+            width: min(900px, calc(100% - 40px));
             margin: 0 auto;
-        }
-
-        .hero {
-            padding: 80px 0 50px;
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 7px 12px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: var(--accent);
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: .02em;
-        }
-
-        .eyebrow::before {
-            content: "";
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: currentColor;
+            padding: 60px 0;
         }
 
         h1 {
-            margin: 20px 0 10px;
-            font-size: clamp(38px, 7vw, 58px);
-            line-height: 1.05;
-            letter-spacing: -0.04em;
+            margin: 0 0 10px;
+            font-size: 2.2rem;
+            line-height: 1.2;
         }
 
-        .intro {
-            max-width: 650px;
-            margin: 0;
-            color: var(--muted);
-            font-size: 18px;
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 12px;
+            font-size: 1.35rem;
         }
 
-        .updated {
-            margin-top: 20px;
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .policy {
-            padding-bottom: 80px;
-        }
-
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 32px;
-            margin-bottom: 16px;
-        }
-
-        .card h2 {
-            margin: 0 0 14px;
-            font-size: 22px;
-            line-height: 1.3;
-            letter-spacing: -0.02em;
-        }
-
-        .card p {
-            margin: 0 0 14px;
-        }
-
-        .card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .highlight {
-            background: var(--accent-soft);
-            border: 1px solid color-mix(
-                in srgb,
-                var(--accent) 20%,
-                transparent
-            );
-        }
-
-        .highlight strong {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 17px;
+        p {
+            margin: 0 0 16px;
         }
 
         ul {
-            margin: 12px 0 0;
-            padding-left: 22px;
+            margin: 0 0 20px;
+            padding-left: 24px;
         }
 
-        li + li {
-            margin-top: 6px;
+        li {
+            margin-bottom: 8px;
         }
 
-        .contact {
-            color: var(--accent);
-            font-weight: 600;
-            text-decoration: none;
+        .updated {
+            color: #666;
+            margin-bottom: 35px;
         }
 
-        .contact:hover {
-            text-decoration: underline;
+        .intro {
+            font-size: 1.08rem;
+        }
+
+        a {
+            color: inherit;
         }
 
         footer {
-            border-top: 1px solid var(--border);
-            padding: 28px 0 40px;
-            color: var(--muted);
-            font-size: 13px;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9rem;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                width: min(100% - 28px, 820px);
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eee;
             }
 
-            .hero {
-                padding: 50px 0 35px;
+            .updated,
+            footer {
+                color: #aaa;
             }
 
-            .card {
-                padding: 24px 20px;
-                border-radius: 16px;
-            }
-
-            .intro {
-                font-size: 16px;
+            footer {
+                border-color: #333;
             }
         }
     </style>
@@ -195,199 +107,399 @@
 
 <body>
 
-<header class="hero">
-    <div class="container">
+<main>
 
-        <span class="eyebrow">Privacy Policy</span>
+    <h1>Privacy Policy</h1>
 
-        <h1>Your privacy matters.</h1>
+    <p class="updated">
+        Last updated: October 1, 2026
+    </p>
 
-        <p class="intro">
-            We designed this app with privacy in mind. We do not collect
-            or store your personal information, and your media stays on
-            your device.
-        </p>
+    <p class="intro">
+        OX TV Launcher ("OX TV", "we", "our", or "the app") is designed
+        with privacy in mind. OX TV is a TV launcher that helps you access
+        applications and launcher features on your Android TV or compatible
+        Android device.
+    </p>
 
-        <div class="updated">
-            Last updated: September 20, 2026
-        </div>
-
-    </div>
-</header>
-
-
-<main class="policy">
-    <div class="container">
-
-        <section class="card highlight">
-            <strong>In short</strong>
-            We do not collect, store, sell, or share your personal
-            information. Images and videos you select for backgrounds
-            remain on your device.
-        </section>
+    <p>
+        We do not operate a service that collects or maintains a personal
+        profile of our users. The information accessed by OX TV is primarily
+        processed locally on your device to provide launcher functionality.
+    </p>
 
 
-        <section class="card">
-            <h2>1. Information We Collect</h2>
+    <h2>1. Information We Access</h2>
 
-            <p>
-                We do not collect, store, or sell your personal information.
-            </p>
+    <p>
+        OX TV may access certain information on your device because this
+        information is necessary for the launcher and related features to work.
+        This may include:
+    </p>
 
-            <p>
-                The app does not require you to create an account or provide
-                personal information such as your name, email address, phone
-                number, or other identifying information.
-            </p>
-        </section>
+    <ul>
+        <li>
+            Information about applications installed on your device, such as
+            application names, icons, and launchable activities.
+        </li>
 
+        <li>
+            Information about available TV applications and TV content when
+            supported by your Android TV device.
+        </li>
 
-        <section class="card">
-            <h2>2. Images and Videos</h2>
+        <li>
+            TV listing, Watch Next, or related program information when the
+            device provides access to this information.
+        </li>
 
-            <p>
-                The app allows you to select images and videos from your
-                device and use them as backgrounds.
-            </p>
+        <li>
+            Images and videos that you choose to access for launcher
+            backgrounds, wallpapers, or related features.
+        </li>
 
-            <p>
-                Images and videos are accessed only to provide the features
-                you request. We do not upload, collect, store, or share your
-                selected images or videos with our servers or third parties.
-            </p>
+        <li>
+            Launcher preferences and settings required to remember your
+            configuration.
+        </li>
+    </ul>
 
-            <p>
-                Your media remains on your device.
-            </p>
-        </section>
-
-
-        <section class="card">
-            <h2>3. Premium Features & Payments</h2>
-
-            <p>
-                Some features of the app may require a one-time purchase
-                through Google Play.
-            </p>
-
-            <p>
-                Purchases are processed through Google's Google Play
-                Billing system. We do not collect or store your payment
-                information, including credit card, debit card, or other
-                payment credentials.
-            </p>
-
-            <p>
-                Premium purchase verification is handled through Google Play.
-                We do not store your payment credentials or payment
-                information.
-            </p>
-        </section>
+    <p>
+        OX TV does not use this information to create a personal profile about
+        you or to sell your information.
+    </p>
 
 
-        <section class="card">
-            <h2>4. Data Storage</h2>
+    <h2>2. Installed Applications</h2>
 
-            <p>
-                We do not operate a service that collects or stores your
-                personal information.
-            </p>
+    <p>
+        As a launcher, OX TV needs to discover applications installed on your
+        device so that it can display them and allow you to launch them.
+    </p>
 
-            <p>
-                Media and other information required for the app's
-                functionality may remain locally on your device.
-            </p>
-        </section>
+    <p>
+        Information about installed applications may include application names,
+        package information, icons, and available launchable activities.
+    </p>
 
+    <p>
+        This application information is used for launcher functionality,
+        including displaying applications, organizing applications, creating
+        favorites, and launching applications.
+    </p>
 
-        <section class="card">
-            <h2>5. Third-Party Services</h2>
-
-            <p>
-                The app uses Google Play services to process and verify
-                purchases.
-            </p>
-
-            <p>
-                These services are operated by Google and are subject to
-                Google's own privacy policies and terms.
-            </p>
-
-            <p>
-                We do not receive or store your payment credentials.
-            </p>
-        </section>
+    <p>
+        This information is processed locally on your device and is not
+        transmitted to OX TV servers for analytics, advertising, profiling, or
+        sale.
+    </p>
 
 
-        <section class="card">
-            <h2>6. Data Sharing</h2>
+    <h2>3. TV Listings and Watch Next Data</h2>
 
-            <p>
-                We do not sell, rent, or share your personal information
-                with third parties.
-            </p>
+    <p>
+        On compatible Android TV devices, OX TV may access TV listing,
+        Watch Next, recommended, or related program information provided by
+        the Android TV system.
+    </p>
 
-            <p>
-                We do not upload your selected images or videos to our
-                servers.
-            </p>
-        </section>
+    <p>
+        This information is used to display TV-related content and launcher
+        features on your device.
+    </p>
 
+    <p>
+        TV listing information accessed through the device is processed locally
+        by OX TV and is not intentionally transmitted to OX TV servers.
+    </p>
 
-        <section class="card">
-            <h2>7. Children's Privacy</h2>
-
-            <p>
-                The app does not knowingly collect personal information
-                from children or adults.
-            </p>
-
-            <p>
-                Because we do not collect personal information, users are
-                not required to provide personal information to use the
-                app's core features.
-            </p>
-        </section>
+    <p>
+        Availability of these features depends on the Android TV device,
+        system software, and permissions provided by the device manufacturer.
+    </p>
 
 
-        <section class="card">
-            <h2>8. Changes to This Privacy Policy</h2>
+    <h2>4. Accessibility Service</h2>
 
-            <p>
-                We may update this Privacy Policy from time to time to
-                reflect changes to the app or applicable requirements.
-            </p>
+    <p>
+        OX TV may provide an Accessibility Service that you can enable through
+        Android system settings.
+    </p>
 
-            <p>
-                Any updated version will be made available on this page.
-            </p>
-        </section>
+    <p>
+        The Accessibility Service is used to help OX TV detect which launcher
+        or application is currently in the foreground and to provide launcher
+        override or related launcher functionality.
+    </p>
+
+    <p>
+        OX TV does not use the Accessibility Service to read, collect, sell,
+        or transmit passwords, messages, personal communications, or other
+        unrelated user content.
+    </p>
+
+    <p>
+        Accessibility information is processed locally on the device and is
+        not intentionally transmitted to OX TV servers.
+    </p>
+
+    <p>
+        You can disable the Accessibility Service at any time through the
+        Android system accessibility settings.
+    </p>
 
 
-        <section class="card">
-            <h2>9. Contact Us</h2>
+    <h2>5. Images, Videos, and Device Storage</h2>
 
-            <p>
-                If you have questions about this Privacy Policy or our
-                privacy practices, please contact us at:
-            </p>
+    <p>
+        OX TV allows you to select images and videos from your device for
+        features such as wallpapers, backgrounds, and other launcher
+        customization.
+    </p>
 
-            <p>
-                <div>
-                    contact at iamdeepak.dev
-                </div>
-            </p>
-        </section>
+    <p>
+        OX TV accesses these files only when required for a feature you
+        choose to use.
+    </p>
 
-    </div>
+    <p>
+        Your selected images and videos are not uploaded to OX TV servers.
+        They remain on your device unless you choose to use another Android
+        feature or application to share or transfer them.
+    </p>
+
+    <p>
+        OX TV may also provide local file-management or backup functionality.
+        Any files accessed through these features are handled according to
+        the action you initiate on your device.
+    </p>
+
+
+    <h2>6. Network Access and Remote Content</h2>
+
+    <p>
+        OX TV requires network access for certain features and may request
+        content from internet URLs, such as remote images, banners, or other
+        content configured by the user.
+    </p>
+
+    <p>
+        When OX TV connects directly to an external URL, the request may be
+        received by the server hosting that URL. The external server may
+        process standard technical information associated with a network
+        request, such as an IP address, according to that provider's own
+        privacy policy.
+    </p>
+
+    <p>
+        OX TV does not use these network requests to create or maintain a
+        personal advertising profile.
+    </p>
+
+    <p>
+        External content is controlled by the respective third-party provider,
+        and their privacy practices are governed by their own policies.
+    </p>
+
+
+    <h2>7. App Installation and Uninstallation</h2>
+
+    <p>
+        OX TV may provide functionality that allows you to initiate application
+        installation or uninstallation actions using Android's system
+        mechanisms.
+    </p>
+
+    <p>
+        These actions are initiated by you and are handled by Android's
+        package-management system. OX TV does not use application-management
+        information for advertising or user profiling.
+    </p>
+
+
+    <h2>8. Premium Features and Google Play Billing</h2>
+
+    <p>
+        Some OX TV features may require a purchase through Google Play.
+    </p>
+
+    <p>
+        Purchases are processed through Google Play Billing. OX TV does not
+        receive or store your credit card number, debit card number, bank
+        account information, or other payment credentials.
+    </p>
+
+    <p>
+        Google may process purchase and transaction information according to
+        Google's own terms and privacy policies.
+    </p>
+
+    <p>
+        For more information about Google's privacy practices, please visit:
+    </p>
+
+    <p>
+        <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Google Privacy Policy
+        </a>
+    </p>
+
+
+    <h2>9. Information We Do Not Collect</h2>
+
+    <p>
+        OX TV does not require you to create an account and does not ask you
+        to provide personal information such as:
+    </p>
+
+    <ul>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>Your phone number</li>
+        <li>Your postal address</li>
+        <li>Your contacts</li>
+        <li>Your messages</li>
+        <li>Your precise location</li>
+        <li>Your advertising profile</li>
+    </ul>
+
+    <p>
+        OX TV does not intentionally collect analytics or advertising data
+        about your use of the launcher.
+    </p>
+
+
+    <h2>10. Data Sharing</h2>
+
+    <p>
+        We do not sell, rent, or otherwise share your personal or sensitive
+        user data with third parties for advertising or profiling purposes.
+    </p>
+
+    <p>
+        Data accessed locally by OX TV remains on your device unless a feature
+        explicitly involves communication with an external service, such as
+        loading content from a URL or processing a purchase through Google
+        Play.
+    </p>
+
+    <p>
+        External services involved in such features operate under their own
+        privacy policies.
+    </p>
+
+
+    <h2>11. Data Storage, Retention, and Deletion</h2>
+
+    <p>
+        OX TV does not operate a user account system or a server-side database
+        containing personal user profiles.
+    </p>
+
+    <p>
+        Launcher settings, preferences, and other locally required data may
+        remain on your device for as long as they are needed by the app.
+    </p>
+
+    <p>
+        You can remove locally stored OX TV data by using the Android system's
+        app storage controls or by uninstalling OX TV, subject to Android's
+        own system behavior.
+    </p>
+
+    <p>
+        Because OX TV does not maintain user accounts or a personal user
+        database, there is no OX TV account requiring account deletion.
+    </p>
+
+
+    <h2>12. Security</h2>
+
+    <p>
+        We take reasonable measures to limit the handling of user data to what
+        is necessary for OX TV's functionality.
+    </p>
+
+    <p>
+        Data that remains on your device is protected by the security
+        mechanisms provided by Android and your device manufacturer.
+    </p>
+
+    <p>
+        Where OX TV communicates with external services, secure communication
+        such as HTTPS is used where supported by the service.
+    </p>
+
+
+    <h2>13. Third-Party Libraries and Services</h2>
+
+    <p>
+        OX TV may use Android, AndroidX, Google Play Billing, and other
+        software libraries required to provide application functionality.
+    </p>
+
+    <p>
+        Third-party libraries are not permitted to use OX TV data for purposes
+        inconsistent with this Privacy Policy.
+    </p>
+
+    <p>
+        Services operated by third parties, including Google Play, may process
+        information according to their own privacy policies.
+    </p>
+
+
+    <h2>14. Children's Privacy</h2>
+
+    <p>
+        OX TV does not knowingly collect personal information from children
+        or adults.
+    </p>
+
+    <p>
+        The app does not require users to create an account or provide
+        personal information to use its core launcher functionality.
+    </p>
+
+
+    <h2>15. Changes to This Privacy Policy</h2>
+
+    <p>
+        We may update this Privacy Policy when OX TV's functionality,
+        services, or applicable legal requirements change.
+    </p>
+
+    <p>
+        The latest version will always be published on this page, together
+        with the date it was last updated.
+    </p>
+
+
+    <h2>16. Contact Us</h2>
+
+    <p>
+        If you have questions about this Privacy Policy or OX TV's privacy
+        practices, please contact us:
+    </p>
+
+    <p>
+        <strong>App:</strong> OX TV Launcher<br>
+        <strong>Email:</strong>
+        <a href="mailto:contact@iamdeepak.dev">
+            contact@iamdeepak.dev
+        </a>
+    </p>
+
+
+    <footer>
+        © 2026 OX TV Launcher. All rights reserved.
+    </footer>
+
 </main>
-
-
-<footer>
-    <div class="container">
-        © 2026 Your App. All rights reserved.
-    </div>
-</footer>
 
 </body>
 </html>
